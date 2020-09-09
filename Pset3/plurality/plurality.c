@@ -72,7 +72,7 @@ bool vote(string name)
         //printf("%s\n", candidates[i].name);
         if(strcmp(candidates[i].name, name) == 0){
             candidates[i].votes += 1;
-            printf("Current voter has %i votes\n", candidates[i].votes);
+            //printf("Current voter has %i votes\n", candidates[i].votes);
             return true;
         }
     }
@@ -83,8 +83,10 @@ bool vote(string name)
 // Print the winner (or winners) of the election
 void print_winner(void)
 {
+    bool is_same = true;
+    int num_cmp = candidates[0].votes;
     // TODO
-
+    int equal_int = 0;
     for(int i = 0; i < candidate_count -1; i++){
         //Last i elements are already in place
         for(int j = 0; j < candidate_count - i - 1; j++){
@@ -95,12 +97,30 @@ void print_winner(void)
             }
         }
     }
-    printf("%s\n", candidates[candidate_count - 1].name);
-    if(candidates[candidate_count -1].votes == candidates[candidate_count -2].votes){
-        
-        printf("%s\n", candidates[candidate_count-2].name);
+    for(int i = 0; i < candidate_count; i++){
+        if(candidates[i].votes != num_cmp){
+            is_same = false;
+        }
     }
-    
+    // for(int i = 0; i < candidate_count; i++){
+    //         printf("%i\n", candidates[i].votes);
+    // }
+
+    if(!is_same){
+        
+        if(candidates[candidate_count -1].votes != candidates[candidate_count -2].votes){
+            printf("%s\n", candidates[candidate_count - 1].name);
+
+        }
+        if(candidates[candidate_count -1].votes == candidates[candidate_count -2].votes){
+            printf("%s\n", candidates[candidate_count-1].name);
+            printf("%s\n", candidates[candidate_count-2].name);
+        }
+    }else{
+        for(int i = 0; i < candidate_count; i++){
+            printf("%s\n", candidates[i].name);
+        }
+    }
     return;
 }
 
