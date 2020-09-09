@@ -40,7 +40,7 @@ O(N) O(N/2) O(log2N)<br>
 
 ## The bigger the problem the more binary and linear search become similar
 
-![algorithm comparison with bigger problem set](images/firefox_CtOEWPIPhw.png)
+![algorithm comparison with bigger problem set](Images/firefox_CtOEWPIPhw.png)
 
 <b>Common run times</b>
 
