@@ -1,0 +1,2 @@
+Get a integer from te user.
+if the integer is outside of the range of 1 < n < 8, then ask again.

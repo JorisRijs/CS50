@@ -1,0 +1,28 @@
+Caesar algorithm:
+
+c is computed as:
+    ci = (pi + k) % 26
+
+    - c = ciphertext
+        - ci = each letter in the cipher text
+    - p = plaintext
+        - pi = the ith character in the plaintext
+    - k = key
+    
+TODO
+- Get key
+    command line argument 
+    - emsure single command line argument
+    - make sure argument contains only digit characters
+        - check each character individually
+    - convert argument to an integer
+- get plaintext
+    - get_string
+- encipher the plaintext
+    - if it's alphabetic, shift plaintext character by key, perserving case
+    - if not alphabetic, nothing has to change
+    functions:
+        - is alpha
+        - is upper
+        - is lower
+- print ciphertext

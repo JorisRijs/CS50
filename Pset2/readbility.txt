@@ -1,0 +1,21 @@
+Formula:
+    index - 0.0588 * L - 0.296 * S - 15.8
+    L = average number of letters per 100 words
+    S = the average number of sentences per 100 words in the text
+    
+Psuedo code: 
+    - ask the user for a string with get_string
+    - count the number of letters, words and sentences in the text
+    - letters = [a-zA-Z]
+    - any sequence of letters seperated by a space are a word
+    - end of a sentence is defined by a period, exclamationmark of questionmark
+    - Print: "Grade X", where X is the grade level needed
+    - If grade level is higher than 16 it should say 16+, and if less than 1: "Before Grade 1
+
+ranges:
+    - Uppercase: [65-90]
+    - Lowercase: [97-122]
+    - Space: 32
+    - period: 46
+    - Exclamationmark: 33
+    - questionmark: 63
