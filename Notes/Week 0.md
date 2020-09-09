@@ -1,6 +1,6 @@
 # lecture 0
 
-![input output](Images/input output.png)
+![input output](Images/input\ output.png)
 
 the thing within the black box is an algorithm
 
