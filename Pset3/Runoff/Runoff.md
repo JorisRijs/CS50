@@ -33,7 +33,7 @@ Complete the find_min function
 
 Complete the `is_tie` function.
 
-- the function takes an argument min, which is the ninimum number of votes that anyone in the election currently has.
+- the function takes an argument `min`, which is the ninimum number of votes that anyone in the election currently has.
 - The function should return `true` if every candidate remaining in the election has the same number of votes and should return `false` otherwise.
 
 ## eliminate function
